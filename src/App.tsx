@@ -1,24 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Container } from "react-bootstrap";
+
+import "./App.css";
+import CalButtons from "./components/CalButtons/CalButtons";
+import InputField from "./components/InputField/InputField";
 
 function App() {
+  const [numberInputField, setNumberInputField] = useState("");
+
+  const resetCalc = () => {
+    return setNumberInputField("");
+  };
+
+  const calculateNumbers = (newNumber: string) => {
+    setNumberInputField(numberInputField.concat(newNumber));
+  };
+
+  const sumOfNumbers = () => {
+    setNumberInputField(eval(numberInputField).toString());
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container>
+        <InputField numberInputField={numberInputField} />
+        <CalButtons
+          calculateNumbers={calculateNumbers}
+          resetCalc={resetCalc}
+          sumOfNumbers={sumOfNumbers}
+        />
+      </Container>
     </div>
   );
 }
