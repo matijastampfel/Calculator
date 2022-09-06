@@ -1,7 +1,7 @@
 {
   "name": "calculator",
   "version": "0.1.0",
-  "homepage": "https://github.com/matijastampfel/Calculator/src/index.tsx",
+  "homepage": "https://github.com/matijastampfel/Calculator",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
