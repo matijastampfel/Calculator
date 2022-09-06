@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/matijastampfel/Calculator/static/css/main.8b860761.css",
+    "main.js": "/matijastampfel/Calculator/static/js/main.e3c2cf61.js",
+    "static/js/787.a174f9e5.chunk.js": "/matijastampfel/Calculator/static/js/787.a174f9e5.chunk.js",
+    "index.html": "/matijastampfel/Calculator/index.html",
+    "main.8b860761.css.map": "/matijastampfel/Calculator/static/css/main.8b860761.css.map",
+    "main.e3c2cf61.js.map": "/matijastampfel/Calculator/static/js/main.e3c2cf61.js.map",
+    "787.a174f9e5.chunk.js.map": "/matijastampfel/Calculator/static/js/787.a174f9e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b860761.css",
+    "static/js/main.e3c2cf61.js"
+  ]
+}
